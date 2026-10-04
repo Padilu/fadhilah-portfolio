@@ -34,7 +34,7 @@ export function AboutSection() {
                 <div className="w-full h-full rounded-full overflow-hidden relative bg-slate-900 flex items-center justify-center">
                   {!imgError ? (
                     <Image
-                      src="/avatar.svg"
+                      src="/profile.jpg"
                       alt={personal.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
