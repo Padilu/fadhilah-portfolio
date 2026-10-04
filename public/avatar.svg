@@ -1,0 +1,48 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#38bdf8" fill-opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" fill="url(#bg-grad)" />
+  <rect width="400" height="400" fill="url(#grid)" />
+
+  <!-- Subtle Technical Calibration Marks -->
+  <circle cx="200" cy="200" r="170" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 6" />
+  <circle cx="200" cy="200" r="140" stroke="#0284c7" stroke-opacity="0.3" stroke-width="1" />
+  <circle cx="200" cy="200" r="105" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" />
+
+  <!-- Crosshairs / Swiss Grid Accents -->
+  <line x1="200" y1="20" x2="200" y2="40" stroke="#0284c7" stroke-width="2" />
+  <line x1="200" y1="360" x2="200" y2="380" stroke="#0284c7" stroke-width="2" />
+  <line x1="20" y1="200" x2="40" y2="200" stroke="#0284c7" stroke-width="2" />
+  <line x1="360" y1="200" x2="380" y2="200" stroke="#0284c7" stroke-width="2" />
+
+  <!-- Center Portrait Monogram Motif -->
+  <g transform="translate(110, 110)">
+    <!-- Base geometric avatar silhouette -->
+    <!-- Head -->
+    <circle cx="90" cy="65" r="42" fill="#1e293b" stroke="url(#accent-grad)" stroke-width="2.5" />
+    <!-- Glasses / Modern minimal styling -->
+    <rect x="68" y="58" width="20" height="13" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <rect x="92" y="58" width="20" height="13" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <line x1="88" y1="64" x2="92" y2="64" stroke="#38bdf8" stroke-width="2" />
+    
+    <!-- Torso / Shoulders -->
+    <path d="M 28 170 C 28 125, 60 120, 90 120 C 120 120, 152 125, 152 170 Z" fill="#1e293b" stroke="url(#accent-grad)" stroke-width="2.5" />
+  </g>
+
+  <!-- Technical Code / Coordinate Labels -->
+  <text x="200" y="325" text-anchor="middle" font-family="monospace" font-size="12" font-weight="600" fill="#94a3b8" letter-spacing="3">FADHILAH ALKAHFI</text>
+  <text x="200" y="345" text-anchor="middle" font-family="monospace" font-size="10" fill="#0284c7" letter-spacing="1.5">6.4914° S, 106.7972° E</text>
+</svg>
