@@ -111,58 +111,6 @@ npm run start
 
 ---
 
-## 📤 Instruksi Push ke GitHub (Ready to Push)
-
-Untuk mem-push proyek ini ke akun GitHub Anda ([https://github.com/Padilu](https://github.com/Padilu)):
-
-### Langkah 1: Buat Repository Baru di GitHub
-1. Buka [https://github.com/new](https://github.com/new).
-2. Beri nama repository, misalnya: `fadhilah-portfolio` atau `portfolio`.
-3. Pilih visibilitas **Public**.
-4. Biarkan opsi *"Initialize this repository with a README"* tidak dicentang (karena kita sudah membuat README lengkap).
-5. Klik **Create repository**.
-
-### Langkah 2: Inisialisasi Git & Push dari Terminal
-Jalankan perintah berikut di direktori proyek:
-
-```bash
-# 1. Masuk ke direktori proyek (jika belum berada di dalamnya)
-cd /Users/macbookpro/.gemini/antigravity/scratch/fadhilah-portfolio
-
-# 2. Inisialisasi Git repository lokal
-git init
-
-# 3. Ubah branch default menjadi main
-git branch -M main
-
-# 4. Tambahkan seluruh file ke staging
-git add .
-
-# 5. Buat initial commit
-git commit -m "feat: initial release of Fadhilah Alkahfi minimalist portfolio"
-
-# 6. Hubungkan dengan remote repository GitHub Anda (ganti URL jika nama repo berbeda)
-git remote add origin https://github.com/Padilu/fadhilah-portfolio.git
-
-# 7. Push kode ke GitHub
-git push -u origin main
-```
-
-> **Catatan Autentikasi GitHub:**  
-> Jika diminta password saat push HTTPS, gunakan **GitHub Personal Access Token (Classic / Fine-grained)** dengan izin `repo`, atau gunakan remote SSH (`git remote set-url origin git@github.com:Padilu/fadhilah-portfolio.git`).
-
----
-
-## 🌐 Opsi Deployment Cepat
-
-- **Vercel (Rekomendasi):**
-  1. Kunjungi [vercel.com](https://vercel.com).
-  2. Klik **Add New Project** > Import repository `Padilu/fadhilah-portfolio`.
-  3. Klik **Deploy**. Selesai dalam 1 menit dengan custom domain gratis.
-- **GitHub Pages:**
-  Proyek ini kompatibel untuk static export melalui `next build`.
-
----
 
 ## 👤 Kontak & Profil
 
