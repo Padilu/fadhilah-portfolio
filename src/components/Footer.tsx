@@ -24,7 +24,7 @@ export function Footer() {
             {personal.brandTitle}
           </div>
           <p className="text-xs text-[var(--text-muted)] mt-1 font-mono">
-            &copy; 2026 Fadhilah Alkahfi. Built with Antigravity.
+            &copy; 2026 Fadhilah Alkahfi.
           </p>
           <p className="text-[11px] text-[var(--text-muted)] mt-0.5">
             Designed with Swiss Minimalism &bull; Next.js &bull; Tailwind CSS
