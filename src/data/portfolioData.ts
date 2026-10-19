@@ -31,6 +31,20 @@ export interface LanguageItem {
   flag?: string;
 }
 
+export interface ProjectItem {
+  id: string;
+  title: string;
+  category: string;
+  techStack: string[];
+  description: string;
+  status: "Planned" | "In Development" | "Completed";
+  defaultCompleted?: boolean;
+  priority: "High" | "Medium" | "Normal";
+  timeline: string;
+  githubUrl?: string;
+  demoUrl?: string;
+}
+
 export const PORTFOLIO_DATA = {
   personal: {
     name: "Fadhilah Alkahfi",
@@ -194,11 +208,93 @@ export const PORTFOLIO_DATA = {
     },
   ] as LanguageItem[],
 
+  upcomingProjects: [
+    {
+      id: "proj-1",
+      title: "AI Assistant (Ruby)",
+      category: "Artificial Intelligence & Automation",
+      techStack: ["Ruby", "OpenAI / Anthropic API", "Sinatra / CLI", "RSpec"],
+      description:
+        "Asisten AI cerdas berbasis Ruby untuk pemrosesan instruksi kontekstual, automasi alur kerja terminal, parsing dokumen cerdas, dan integrasi webhook.",
+      status: "In Development",
+      defaultCompleted: false,
+      priority: "High",
+      timeline: "Q4 2026",
+      githubUrl: "https://github.com/Padilu",
+    },
+    {
+      id: "proj-2",
+      title: "Website Rumah Sakit",
+      category: "Full-Stack Health System",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
+      description:
+        "Sistem informasi manajemen rumah sakit modern & terpadu. Dilengkapi modul pendaftaran pasien online, jadwal poli dokter real-time, dan pemantauan antrean digital.",
+      status: "Planned",
+      defaultCompleted: false,
+      priority: "High",
+      timeline: "Q1 2027",
+      githubUrl: "https://github.com/Padilu",
+    },
+    {
+      id: "proj-3",
+      title: "QA Tools mirip Selenium",
+      category: "Software Quality & Automation",
+      techStack: ["TypeScript / Node.js", "Playwright / Puppeteer Core", "Jest", "CI/CD"],
+      description:
+        "Framework otomasi pengujian antarmuka pengguna (UI Test Automation Engine) mandiri dengan visual regression testing, script recorder ringan, dan laporan eksekusi otomatis.",
+      status: "Planned",
+      defaultCompleted: false,
+      priority: "Medium",
+      timeline: "Q1 2027",
+      githubUrl: "https://github.com/Padilu",
+    },
+    {
+      id: "proj-4",
+      title: "Developer CLI Utility Suite",
+      category: "Lightweight System Utilities",
+      techStack: ["Go / Node.js", "Terminal UI", "Shell Scripting"],
+      description:
+        "Koleksi program ringan untuk automasi alur kerja pengembang: scaffolding project kilat, pengelola branch git, dan pembersih cache lingkungan development.",
+      status: "In Development",
+      defaultCompleted: false,
+      priority: "Normal",
+      timeline: "Q4 2026",
+      githubUrl: "https://github.com/Padilu",
+    },
+    {
+      id: "proj-5",
+      title: "Markdown Snippet & Note Engine",
+      category: "Productivity Application",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "IndexedDB / SQLite"],
+      description:
+        "Aplikasi catatan teknis dan manajemen code snippet offline-first yang super cepat dengan syntax highlighting, tag hierarkis, dan instant search berlatar Swiss minimalist.",
+      status: "Planned",
+      defaultCompleted: false,
+      priority: "Normal",
+      timeline: "Q2 2027",
+      githubUrl: "https://github.com/Padilu",
+    },
+    {
+      id: "proj-6",
+      title: "Network Port & Latency Probe",
+      category: "Networking Diagnostics",
+      techStack: ["Python", "Socket Networking", "Minimalist Dashboard"],
+      description:
+        "Utilitas ringan untuk pemantauan ketersediaan port, pengecekan latensi koneksi host secara periodik, dan peringatan instan jika ada anomali jaringan.",
+      status: "Planned",
+      defaultCompleted: false,
+      priority: "Normal",
+      timeline: "Q2 2027",
+      githubUrl: "https://github.com/Padilu",
+    },
+  ] as ProjectItem[],
+
   navigation: [
     { name: "About", href: "#about" },
     { name: "Education", href: "#education" },
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact & Q&A", href: "#contact" },
   ],
 };

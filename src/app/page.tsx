@@ -7,6 +7,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { EducationSection } from "@/components/EducationSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { SkillsSection } from "@/components/SkillsSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { useParallax } from "@/hooks/useParallax";
@@ -17,7 +18,7 @@ export default function Home() {
 
   // Track active section for navigation highlight
   const activeSection = useScrollSpy(
-    ["about", "education", "experience", "skills", "contact"],
+    ["about", "education", "experience", "skills", "projects", "contact"],
     150
   );
 
@@ -43,7 +44,10 @@ export default function Home() {
         {/* Section 04: Skills & Bento Grid */}
         <SkillsSection />
 
-        {/* Section 05: Contact & Inquiries */}
+        {/* Section 05: Upcoming Projects & Interactive Roadmap */}
+        <ProjectsSection />
+
+        {/* Section 06: Contact & Visitor Q&A */}
         <ContactSection />
       </main>
 
