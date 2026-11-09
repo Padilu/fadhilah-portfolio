@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
-import { Sun, Moon, Menu, X, ArrowUpRight } from "lucide-react";
+import { Sun, Moon, Menu, X, ArrowUpRight, Search } from "lucide-react";
 
 interface NavbarProps {
   activeSection: string;
@@ -67,6 +67,21 @@ export function Navbar({ activeSection, isScrolled }: NavbarProps) {
 
           {/* Right Action Area */}
           <div className="flex items-center gap-2 sm:gap-3">
+            {/* Quick Command Palette Button */}
+            <button
+              onClick={() => {
+                window.dispatchEvent(
+                  new KeyboardEvent("keydown", { key: "k", metaKey: true, bubbles: true })
+                );
+              }}
+              aria-label="Open command palette"
+              className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded border border-[var(--card-border)] bg-[var(--card-bg)] text-xs font-mono text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--accent)] transition-all cursor-pointer"
+              title="Search & Quick Actions (⌘K)"
+            >
+              <Search className="w-3.5 h-3.5 text-[var(--accent)]" />
+              <kbd className="text-[10px] text-[var(--text-muted)]">⌘K</kbd>
+            </button>
+
             {/* Direct Connect Quick CTA */}
             <a
               href="#contact"

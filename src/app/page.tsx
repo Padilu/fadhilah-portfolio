@@ -9,6 +9,7 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
+import { CommandPalette } from "@/components/CommandPalette";
 import { Footer } from "@/components/Footer";
 import { useParallax } from "@/hooks/useParallax";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
@@ -50,6 +51,9 @@ export default function Home() {
         {/* Section 06: Contact & Visitor Q&A */}
         <ContactSection />
       </main>
+
+      {/* Developer Command Palette & Interactive Shell */}
+      <CommandPalette />
 
       {/* Footer */}
       <Footer />
